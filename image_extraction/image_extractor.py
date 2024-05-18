@@ -17,13 +17,16 @@ if __name__ == "__main__":
     window_name = img_path
     img = cv2.imread(img_path)
 
-    height, width, _ = img.shape
+    try:
+        height, width, _ = img.shape
+    except:
+        print('\nImage not found: Did you enter the correct path and name for your image?\n')
+        os._exit(0)
 
     # add the corner points bottom_left, bottom_right, top_left and top_rigth
     points = [[0, 0], [width - 1, 0], [0, height - 1], [width - 1, height - 1]]
 
     # init opnecv handler
-    print(type(img))
     opencv_click = OpencvClick(
         img,
         points,
