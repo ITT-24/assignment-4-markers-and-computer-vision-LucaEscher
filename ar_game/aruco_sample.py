@@ -2,10 +2,14 @@ import cv2
 import cv2.aruco as aruco
 import sys
 
-video_id = 0
+video_id = 2
 
 if len(sys.argv) > 1:
     video_id = int(sys.argv[1])
+
+aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_250)
+aruco_params =  cv2.aruco.DetectorParameters()
+detector = cv2.aruco.ArucoDetector(aruco_dict, aruco_params)
 
 # Define the ArUco dictionary and parameters
 aruco_dict = aruco.getPredefinedDictionary(aruco.DICT_6X6_250)
@@ -22,7 +26,7 @@ while True:
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
     # Detect ArUco markers in the frame
-    corners, ids, rejectedImgPoints = aruco.detectMarkers(gray, aruco_dict, parameters=aruco_params)
+    corners, ids, rejectedImgPoints = detector.detectMarkers(gray)
 
     # Check if marker is detected
     if ids is not None:
