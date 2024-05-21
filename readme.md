@@ -16,6 +16,14 @@ The pattern is the following:
 
 ``'<file> -image_path -ouput_path -width -height\n'``
 
+
+## Shortcuts
+
+- press ESC to restart setting points. **This can only be done if 4 points are already set.**
+- press S to save the warped image at the specified ouput_path with the correspoding width and height
+
+
+
 ### Input Parameters
 - image_path: the path from your current dir to the image you want to warp. For example **sample_image.jpg**.
 - ouput_path: the path + the name + the file type to the photo you want to save (which is edited in perspective). For example **./edited_file.jpg**.
