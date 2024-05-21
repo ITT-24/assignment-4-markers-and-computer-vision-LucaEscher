@@ -11,7 +11,7 @@ import sys
 
 # partly copied from aruco_sample.py 
 video_id = 0
-cam_res = False
+cam_res = True
 
 if len(sys.argv) > 1:
     video_id = int(sys.argv[1])

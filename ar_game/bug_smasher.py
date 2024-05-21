@@ -120,11 +120,12 @@ class BugSmasher:
                 clock.unschedule(self.update_game_time)
 
     def restart(self):
+        clock.unschedule(self.update_game_time)
+        self.bugs.stop_spawner()
         self.bugs.active_bugs = []
         self.game_time = GAME_TIME
         self.score = 0
         self.game_state = 0
-        self.bugs.start_spawner()
         clock.schedule_interval(self.update_game_time, 1)
     
     def run(self):

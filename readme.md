@@ -27,7 +27,7 @@ Notice: The file type should be jpg or png.
 
 
 # AR-Game
-The distance from the camera to the paper should be between 80 cm and 100 cm (at my settings).
+The distance from the camera to the paper should not be too far, so the marker can be tracked reliable.
 Be aware that the distance to the markers does matter. If it is flickering try to get the camera closer to the markers.
 
 
@@ -74,4 +74,3 @@ Your controller is your hand! You can use your finger or your whole hand but be 
 |  Green Bug | https://www.shutterstock.com/image-vector/beetle-pixel-art-potato-bug-260nw-1912842055.jpg|
 |Small Bee | https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq5CXy5tbn2MK6c0YgRtF1bVRMSfZ7_Lay3wgt51mG_m47JXwXkHA6GSO3CITnBWmou1E&usqp=CAU |
 |Brown Bug | https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9yqBiQ4weSweGsQ7gfj056DkAPQCRaKJWYrKPSLTZkL1lIL5S5uyUuyERJEf81fqDrYE&usqp=CAU|
-|Smash Gif| https://cdna.artstation.com/p/assets/images/images/034/453/642/original/jeong-h-lee-ezgif-com-resize.gif?1612333627|
