@@ -16,6 +16,8 @@ class Perspective:
         # Detect ArUco markers in the frame
         corners, ids, rejectedImgPoints = detector.detectMarkers(gray)
 
+        # AS: why not use marker IDs?
+
         filtered_corners = []
         # Check if marker is detected
         if ids is not None:
